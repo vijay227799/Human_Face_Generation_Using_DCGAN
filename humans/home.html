@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Face Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top bar styles */
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            height: 80px;
+        }
+
+        /* Main content styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+        .description {
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Button styles */
+        .generate-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .generate-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        Human Face Generator
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="description">
+            <h2>Welcome to the Human Face Generator</h2>
+            <p>Generate unique and diverse human faces with a click of a button. Choose from different attributes like gender and nationality to get a custom face generated instantly!<br>This application generates faces using a DCGAN model.</p>
+        </div>
+
+        <!-- Supporting images -->
+        <div class="images">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Face 1">
+            <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Face 2">
+            <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Face 3">
+            <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Face 4">
+        </div>
+
+        <!-- Button to generate face -->
+        <a href="http://localhost:8501/" class="generate-button">Try Now!</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2024 Human Face Generator. 
+    </div>
+</body>
+</html>
