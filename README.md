@@ -1,1 +1,1 @@
-#Human Face Generation using DCGAN
+Human Face Generation using DCGAN
